@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  display: inline-block;
+  cursor: pointer;
+}
+.bar1,
+.bar2,
+.bar3 {
+  height: 2rem;
+  width: 16rem;
+  margin: 3rem 0rem;
+  background-color: black;
+  transition: 0.7s;
+}
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(0rem, 0rem);
+  transform: rotate(-45deg) translate(0rem, 0rem);
+}
+.change .bar2 {
+  opacity: 0;
+}
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-7rem, -7rem);
+  transform: rotate(45deg) translate(-7rem, -7rem);
+}
